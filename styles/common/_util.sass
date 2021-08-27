@@ -1,0 +1,154 @@
+// Variables -->......................................
+$activeText: #08090a
+$backgroundColor: #eef0f1
+$bg: #eef0f1
+$black: #08090a
+$black1: #000
+$black2: #333
+$black3: #444
+$black4: #666
+$blue: #20639b
+$blue_dark: #3b49df
+$dark_blue: #173f5f
+$dark_gray: #b5bdc4
+$dark_green: #247209
+$dark_red: #800500
+$disabledText: #d3d3d3
+$goldenBrown: #996515
+$gray: #dad8db
+$gray2: #b5bdc4
+$green: #3bdf72
+$green2: #88d840
+$light_gray: #f7f7f7
+$light_green: #67b826
+$navbarBackground: #fff
+$orange: #f77f00
+$red: #df3b3b
+$red2: #e10600
+$royalGold: #f5bd02
+$text: #08090a
+$white: #fff
+$yellow: #fcbf49
+
+$maxMobile: 576 // (for phones)
+$minTablet: 576 // (for tablet)
+$minTabletLC: 769 // (landscape of tablet)
+$minDesktopSM: 992 // (for small Laptop)
+$minDesktopLG: 1201 // (for large laptop)
+$min4K: 1441 // (for 4k)
+
+$barHeight: 4
+$barWidth: $barHeight * 7
+$marginTwo: $barHeight * 2
+$marginFour: $barHeight * 4
+$marginFive: $barHeight * 5
+$menuHeight: 60
+
+// Mixins -->......................................
+=maxMobile
+  @media only screen and (max-width: $maxMobile + px)
+    @content
+=minTablet
+  @media only screen and (min-width: $minTablet + px)
+    @content
+=minTabletLC
+  @media only screen and (min-width: $minTabletLC + px)
+    @content
+=minDesktopSM
+  @media only screen and (min-width: $minDesktopSM + px)
+    @content
+=minDesktopLG
+  @media only screen and (min-width: $minDesktopLG + px)
+    @content
+=min4K
+  @media only screen and (min-width: $min4K + px)
+    @content
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+// COMMON CLASSES -----------------------------------
+=clearfix
+  &:after,
+  &:before
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+=flex_center_vertically($height)
+  display: flex
+  justify-content: center
+  flex-direction: column
+  height: $height
+
+=text_center($line-height)
+  text-align: center
+  line-height: $line-height
+
+=absolute_center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+=flex_center
+  display: flex
+  justify-content: center
+  align-items: center
+
+=hidden
+  display: none
+
+=show
+  display: block
+
+=noSelect
+  -webkit-touch-callout: none
+  user-select: none
+
+=noCallout
+  -webkit-touch-callout: none
+
+=noAction
+  touch-action: none
+
+=imgNoClick
+  position: relative
+
+=imgNoClickCover
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: 100%
+  width: 100%
+
+=focus_ring_issue
+  outline: -webkit-focus-ring-color auto 5px
+  // write this for &:focus
+
+=tap_highlight_issue
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  -webkit-tap-highlight-color: transparent
+
+=break_words
+  word-wrap: break-word
+
+=wrap_words
+  overflow-wrap: break-word
+  word-wrap: break-word
+  hyphens: auto
+
+=reset_button
+  appearance: none
+  border: none
+  background: none

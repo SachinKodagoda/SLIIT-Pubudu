@@ -1,0 +1,90 @@
+@import '../../common/_util'
+
+.videoMenuRight
+    flex-grow: 0
+    flex-shrink: 0
+    background: $black2
+    margin-left: 16px
+    width: 284px
+    height: 100%
+    border-radius: 10px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+
+.chatItemCover
+    flex-grow: 1
+    font-size: 18px
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    flex-direction: column
+    padding: 15px 15px 0px
+    overflow-y: auto
+
+.chatItem
+    display: inline-block
+    margin-bottom: 15px
+    border-radius: 10px 20px 20px 0px
+    color: $white
+    background: $black4
+    padding: 0.5em 1em
+    font-weight: 900
+
+.keyItem
+    display: inline-block
+    margin-bottom: 15px
+    border-radius: 10px 20px 20px 0px
+    color: $white
+    background: $black4
+    padding: 0.5em 1em
+    font-weight: 900
+    background: green
+
+.hiddenKey
+    display: none
+    margin-bottom: 15px
+    border-radius: 10px 20px 20px 0px
+    color: $white
+    background: $black4
+    padding: 0.5em 1em
+    font-weight: 900
+    background: green
+
+.chatInput
+    flex-grow: 0
+    flex-shrink: 0
+    border-top: 10px solid $black !important
+    padding: 1rem
+    color: $white
+
+.chatInputItem
+    opacity: 1
+    border: none
+    outline: none
+    width: 100%
+    padding: 0.8em
+    background: $black3!important
+    background-image: none !important
+    border-radius: 0 0 10px 10px
+    font-size: 18px
+    color: $white
+    font-weight: 900
+
+.waiting
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: .5rem 1rem
+    font-size: 1.2rem
+    color: #fff
+    background: $black
+    border-top: 10px solid $black
+
+.submitBtn
+    background: $black
+    color: $white
+    padding: 1rem
+    border-radius: 10px
+    width: 100%
+    margin: 1rem 0

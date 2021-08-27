@@ -1,0 +1,36 @@
+@import '../../common/_util'
+.container
+  height: 60px
+  width: 100%
+  background: $navbarBackground
+  display: flex
+  align-items: center
+  justify-content: center
+
+.middleContainer
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex: 0 1 ($minDesktopLG + px)
+  padding: 0 16px
+
+.title
+  .davinci_logo
+    height: 20px
+    width: auto
+
+.menu
+  display: none
+  +minDesktopSM
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 16px
+
+.menuItem
+  text-transform: uppercase
+
+.langBar
+  padding: 0 20px
+  border-radius: 50px
+  background: $black

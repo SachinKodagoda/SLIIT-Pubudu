@@ -1,0 +1,134 @@
+@import '../../common/_util'
+
+.bottomBar
+    width: 100%
+    height: 60px
+    background: $black2
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0 20px
+
+.iconBottomBar
+    cursor: pointer
+    height: 40px
+    width: auto
+
+.left
+    flex-grow: 1
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    column-gap: 20px
+
+.leftIcons
+    cursor: pointer
+    height: 30px
+    width: auto
+
+.middle
+    display: flex
+    align-items: center
+    justify-content: center
+    background: $black1
+    padding: 10px 20px
+    border-radius: 10px
+    column-gap: 20px
+
+.middleIcons
+    height: 30px
+    width: auto
+    cursor: pointer
+
+.right
+    flex-grow: 1
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    column-gap: 20px
+
+.rightIcons
+    cursor: pointer
+    height: 30px
+    width: auto
+
+.disabled
+    cursor: not-allowed
+
+.popupMenuCover
+    position: relative
+
+.itemRow
+    display: flex
+    align-items: center
+    padding: 6px 12px
+    background: $gray2
+    margin-bottom: 6px
+    border-radius: 4px
+    font-weight: 400
+
+.popupMenu
+    overflow-y: auto
+    width: max-content
+    border-radius: 10px
+    height: 500px
+    position: absolute
+    top: -20px
+    left: -20px
+    background: $black3
+    transform: translateY(-100%)
+    padding: 12px
+    border: 2px solid $black1
+    -ms-overflow-style: none
+    scrollbar-width: none
+    cursor: pointer
+    &::-webkit-scrollbar
+        display: none
+
+.hide
+    display: none
+
+.selectBox
+    margin-right: 6px
+
+.checkIcon
+    width: 20px
+    height: 20px
+    display: none
+
+.selected
+    display: block
+
+.popupMenuMainIcons
+    display: flex
+    column-gap: 10px
+
+.popupMenuMainIconsRow
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 6px 12px
+    color: $white
+    background: $black3
+    margin-bottom: 6px
+    border-radius: 4px
+    font-weight: 400
+    flex-grow: 1
+    min-width: 180px
+    border: 1px solid #ccc
+
+.selectNumber
+    margin-right: 6px
+    color: $black1
+    width: 20px
+    height: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 100%
+    border: 2px solid $black1
+
+.selectNumberActive
+    background: $dark_red
+    color: $white
+    border: none

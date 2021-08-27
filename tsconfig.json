@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5",
+    "allowSyntheticDefaultImports": true, // me
+    "importHelpers": true, // me
+    "noImplicitAny": true, // me
+    "noImplicitReturns": true, // me
+    "noImplicitThis": true, // me
+    "noUnusedLocals": true, // me
+    "suppressImplicitAnyIndexErrors": true, // me
+    "baseUrl": ".", //me
+    "paths": {
+      "@components_style/*": ["styles/ui/components/*"],
+      "@components/*": ["src/common/ui/components/*"],
+      "@ctx/*": ["src/common/ctx/*"],
+      "@data/*": ["src/common/data/*"],
+      "@hooks/*": ["src/common/hooks/*"],
+      "@images/*": ["public/images/*"],
+      "@layouts_style/*": ["styles/ui/layouts/*"],
+      "@layouts/*": ["src/common/ui/layouts/*"],
+      "@lib/*": ["src/common/lib/*"],
+      "@pages_style/*": ["styles/*"],
+      "@styles/*": ["styles/*"],
+      "@svg/*": ["src/common/svg/*"],
+      "@translations/*": ["src/common/translations/*"],
+      "@ts/*": ["src/common/ts/*"],
+      "@util/*": ["src/common/util/*"],
+      "@public/*": ["public/*"]
+    }
+  },
+  "exclude": ["node_modules", ".github", ".vscode"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}

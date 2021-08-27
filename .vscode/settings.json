@@ -1,0 +1,42 @@
+{
+  "search.exclude": {
+    "**/.dev_assets/**": true,
+    "**/.git/**": true,
+    "**/.github/**": true,
+    "**/.next/**": true,
+    "**/.vscode/**": true,
+    "**/build/**": true,
+    "**/node_modules/**": true
+  },
+
+  "files.watcherExclude": {
+    "**/.dev_assets/**": true,
+    "**/.git/**": true,
+    "**/.github/**": true,
+    "**/.next/**": true,
+    "**/.vscode/**": true,
+    "**/build/**": true,
+    "**/node_modules/**": true
+  },
+  "cSpell.words": [
+    "Abinaya",
+    "Kumarasinghe",
+    "SAMPLINGMODE",
+    "Thilina",
+    "babylonjs",
+    "brachiocephalic",
+    "cava",
+    "drei",
+    "fingerpose",
+    "gltf",
+    "gltfjsx",
+    "handpose",
+    "hemi",
+    "mediapipe",
+    "preconnect",
+    "speechly",
+    "tfjs",
+    "unproject",
+    "webgl"
+  ]
+}

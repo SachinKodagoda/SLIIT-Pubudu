@@ -1,0 +1,72 @@
+@import '../../common/_util'
+
+.container
+  width: 100%
+  font-weight: normal
+  position: relative
+
+.inputElementCtr
+  position: relative
+
+.labelElement
+  display: inline-block
+  margin-bottom: 8px
+  font-weight: bold
+
+.errorMsg
+  display: none
+  margin-top: 8px
+  font-size: 0.8571rem
+  color: $red
+.error
+  display: block
+
+.cross
+  position: absolute
+  top: 50%
+  right: 0px
+  width: 30px
+  height: 40px
+  transform: translateY(-50%)
+  user-select: none
+  cursor: pointer
+  &::before,
+  &::after
+    position: absolute
+    left: 50%
+    top: 50%
+    content: ''
+    height: 16px
+    width: 1px
+    background-color: $black
+  &::before
+    transform: translate(-50%, -50%) rotate(45deg)
+  &::after
+    transform: translate(-50%, -50%) rotate(-45deg)
+
+.inputElement
+  display: block
+  width: 100%
+  padding: 0.375rem 0.75rem
+  padding-right: 30px
+  font-size: 1rem
+  font-weight: 400
+  line-height: 1.5
+  height: 40px
+  color: $black
+  background-color: $white
+  background-clip: padding-box
+  border: 1px solid $dark_gray
+  appearance: none
+  border-radius: 3px
+  transition: border-color 0.15s ease-in-out
+  outline: none
+  caret-color: $blue
+  display: block
+  line-height: 38px
+  &:focus
+    border-color: $dark_gray
+  &, .error
+    border: 1px solid $red
+    &:focus
+      border-color: $red

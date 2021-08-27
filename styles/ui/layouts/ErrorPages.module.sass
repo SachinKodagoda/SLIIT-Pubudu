@@ -1,0 +1,30 @@
+@import '../../common/_util'
+.container
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  gap: 16px
+  width: 100vw
+  height: 100vh
+
+.imageCover
+  width: calc(100% - 32px)
+  height: auto
+  display: flex
+  align-items: center
+  justify-content: center
+  +minDesktopSM
+    width: 400px
+
+.message
+  font-size: 1.5rem
+  padding: 1em 0.5em
+  margin-top: 1em
+  text-align: center
+  font-weight: 600
+
+.btnCtr
+  width: 200px
+  +minDesktopSM
+    width: 300px

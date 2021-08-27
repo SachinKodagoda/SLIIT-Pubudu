@@ -1,0 +1,56 @@
+@import './common/_util'
+.container
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  max-width: $minDesktopLG + px
+  padding: 0 16px
+  margin: auto
+
+.tabHeader
+  display: flex
+  align-items: center
+  justify-content: center
+  column-gap: 32px
+  row-gap: 8px
+  width: 100%
+  flex-wrap: wrap
+  margin: 32px 0 16px
+
+.tabHeaderItem
+  cursor: pointer
+  text-transform: uppercase
+  color: $disabledText
+
+.active
+  color: $activeText
+
+.tabBody
+  width: 100%
+
+.deliveryDesc
+  margin-top: 0
+  display: none
+  +minDesktopSM
+    margin-top: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 40px
+    flex-wrap: wrap
+
+.deliveryDescItem
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 10px
+  flex-wrap: wrap
+  border-bottom: 2px dotted $black
+  color: $black
+  width: 300px
+  height: 60px
+
+.deliveryDescIcon
+  width: 40px
+  height: 40px

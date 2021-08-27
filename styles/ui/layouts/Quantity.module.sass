@@ -1,0 +1,175 @@
+@import '../../common/_util'
+
+.container
+  display: flex
+  align-items: stretch
+  justify-content: center
+  flex-wrap: wrap
+
+.sample
+  max-width: 500px
+  height: auto
+  display: block
+  +maxMobile
+    width: calc(100vw - 32px)
+
+.leftContainer
+  flex-basis: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  +minDesktopSM
+    flex-basis: 50%
+    justify-content: flex-end
+
+.rightContainer
+  flex-basis: 100%
+  padding: 32px 0
+  max-width: 500px
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  +minDesktopSM
+    flex-basis: 50%
+    padding: 0 32px
+
+.topic
+  text-transform: uppercase
+  align-self: center
+  text-align: center
+  font-size: 1rem
+  font-weight: 500
+  position: relative
+  padding-bottom: 8px
+  margin-bottom: 32px
+  &::after
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: 2px
+    transform: translate(-50%, -50%)
+    width: 50%
+    height: 2px
+    background: $goldenBrown
+    border-radius: 6px
+
+  +minDesktopSM
+    font-size: 1.6rem
+
+.figureCount
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 16px
+  margin: 16px 0
+
+.figureCountItem
+  padding: 8px
+  border-radius: 4px
+  text-align: center
+  font-weight: 600
+  cursor: pointer
+  background: $gray
+  color: $black
+
+.selected
+  background: $black
+  color: $white
+
+.priceTable
+  border-top: 1px solid $goldenBrown
+  display: grid
+  grid-template-columns: repeat(2, auto)
+
+.priceDesc
+  padding: 16px 0
+
+.price
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  gap: 8px
+
+.previousPrice
+  text-decoration: line-through
+  font-size: 0.8rem
+
+.nowPrice
+  color: $red
+  font-weight: 600
+
+.totalPriceCover
+  border-top: 1px solid $goldenBrown
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+.totalPrice
+  border-bottom: 2px solid $goldenBrown
+  position: relative
+  padding-bottom: 2px
+  color: $red
+  font-weight: 900
+  margin-bottom: 16px
+  &::after
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: 1px
+    transform: translate(-50%, -50%)
+    width: 100%
+    height: 2px
+    background: $goldenBrown
+    border-radius: 6px
+
+.controlBtn
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap-reverse
+  margin: 16px 0
+  gap: 16px
+
+.expressDelivery
+  display: flex
+  align-items: center
+  justify-content: center
+  .delivery_in
+    text-transform: capitalize
+
+  .delivery_days
+    color: $green
+    font-weight: 700
+
+.blink
+  width: 10px
+  height: 10px
+  background: $green
+  border-radius: 100%
+  margin-right: 10px
+
+.backBtn
+  border: 1px solid $goldenBrown
+  width: 200px
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50px
+  font-weight: 600
+  color: $goldenBrown
+  background: $white
+  text-transform: uppercase
+
+.nextBtn
+  border: 1px solid $goldenBrown
+  width: 200px
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50px
+  font-weight: 600
+  color: $white
+  background: $goldenBrown
+  text-transform: uppercase
